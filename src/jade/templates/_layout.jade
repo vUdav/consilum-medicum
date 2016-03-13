@@ -1,0 +1,18 @@
+include ../mixins/_menu
+include ../mixins/_svg
+include ../mixins/_breadcrumbs
+include ../components/_variables
+
+doctype
+html(lang="ru")
+
+	include ../components/_head
+
+	body
+		include ../components/_page-header
+
+		block content
+
+		include ../components/_page-footer
+
+include ../components/_footer
