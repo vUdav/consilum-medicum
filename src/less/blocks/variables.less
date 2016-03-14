@@ -870,10 +870,18 @@
 
 
 //------------------------------------------------------------------------------
+//  Color
+//------------------------------------------------------------------------------
+
+@link-color: @brand-primary;
+@link-color--hover: @brand-primary;
+
+//------------------------------------------------------------------------------
 //  Typography
 //------------------------------------------------------------------------------
 
-@font-family:                 "Bebas Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:      'PT Sans', sans-serif;
+@font-family:                 @font-family-sans-serif;
 @font-family--serif:          Georgia, "Times New Roman", Times, serif;
 @font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -899,5 +907,11 @@
 
 @screen-xs:                   480px;
 @screen-sm:                   768px;
-@screen-md:                   1200px;
+@screen-md:                   1160px;
 // @screen-lg:                   1280px;
+
+//------------------------------------------------------------------------------
+//  Animations
+//------------------------------------------------------------------------------
+
+@transition-time: .2s;
