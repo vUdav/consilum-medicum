@@ -7,7 +7,7 @@ module.exports = {
 				Jade: 'src/jade/**/*.jade',
 				Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
 				PngSprite: 'src/img/sprite/**/*.png',
-				GHPages: 'build/**/*',
+				GHPages: 'dist/**/*',
 				JS: 'src/js/**/*.*',
 				JSVendor: 'vendor/**/*.*',
 				BowerJSVendor: 'src/js/vendor/',
