@@ -1,0 +1,62 @@
+.page-header
+	.page-header__top.row
+		.page-header__logo-area.col-xs-6.col-sm-8.col-md-6
+			a.page-header__mainpage-link(href="") На главную
+			a.page-header__logo(href="")
+			.page-header__many-doctors С нами уже
+				br.visible-xs
+				strong  100 000
+				|  врачей
+			a.btn.hidden-xs(href="") Присоединиться
+			a.page-header__appstore.hidden-xs(href="")
+		.page-header__socials-area.hidden-xs.hidden-sm.col-md-3
+			strong.page-header__socials-title Мы в социальных сетях
+			.page-header__socials-list-pharma Для фармацевтов
+				ul.page-header__social-list
+					li.page-header__social-item.page-header__social-item--vk
+						a(href="")
+					li.page-header__social-item.page-header__social-item--fb
+						a(href="")
+					li.page-header__social-item.page-header__social-item--ok
+						a(href="")
+			.page-header__sicials-list-doctors Для врачей
+				ul.page-header__social-list
+					li.page-header__social-item.page-header__social-item--vk
+						a(href="")
+					li.page-header__social-item.page-header__social-item--fb
+						a(href="")
+					li.page-header__social-item.page-header__social-item--ok
+						a(href="")
+		.page-header__personal-area.col-xs-6.col-sm-4.col-md-3
+			.page-header__personal-area-wrapper
+				.page-header__login
+					a.page-header__signin(href="") Войти
+					br.visible-xs
+					a.page-header__signup(href="") Зарегистрироваться
+				a.page-header__cart(href="")
+					span.page-header__cart-counter 1
+					|2 000
+					span.rouble a
+
+	.page-header__bottom.row
+		.col-xs-6.col-sm-8.col-md-9
+			a#menu-show.page-header__burger.visible-xs.visible-sm(href="") Меню
+			menu.page-header__menu
+				li
+					a(href="") ЖУРНАЛЫ
+				li
+					a(href="") ВИДЕОКОНФЕРЕНЦИИ
+				li
+					a(href="") МЕРОПРИЯТИЯ
+				li
+					a(href="") КОМПАНИИ
+				li
+					a(href="") ЛЕКАРСТВА
+				li
+					a(href="") ПАРТНЕРЫ
+				li
+					a(href="") АВТОРАМ
+		.col-xs-6.col-sm-4.col-md-3
+			form.page-header__search#form-search(action="")
+				input(type="text", placeholder="Поиск", name="search")
+				input(type="submit", value="").page-header__search-btn

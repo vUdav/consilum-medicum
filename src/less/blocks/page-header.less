@@ -1,0 +1,270 @@
+.page-header {
+	&__top {
+		background: url(../img/header-bg.png) center;
+		padding-top: 19px;
+		height: 150px;
+
+		@media (min-width: @screen-sm) {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+
+	&__mainpage-link {
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	&__logo {
+		display: block;
+		width: 156px;
+		height: 46px;
+		background: url(../img/logo-min.png) no-repeat;
+		margin-bottom: 11px;
+
+		@media (min-width: @screen-sm) {
+			background: url(../img/logo.png);
+			background-size: cover;
+			width: 100%;
+			height: 34px;
+			margin-bottom: 17px;
+		}
+	}
+
+	&__many-doctors {
+		font-size: 1.6rem;
+		line-height: 2rem;
+
+		@media (min-width: @screen-sm) {
+			display: inline-block;
+			margin-right: 17px;
+			vertical-align: top;
+			margin-top: 11px;
+		}
+	}
+
+	.btn {
+		vertical-align: top;
+		margin-top: 3px;
+	}
+
+	&__appstore {
+		display: inline-block;
+		.sprite(@s-appstore);
+		float: right;
+	}
+
+	&__socials-area {
+		padding-top: 29px;
+		text-align: right;
+
+		strong {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__social-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		position: relative;
+		top: 8px;
+		margin-left: 9px;
+		margin-bottom: 10px;
+	}
+
+	&__social-item {
+		display: inline-block;
+		margin-right: 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--vk {
+			.sprite(@s-icon-vk);
+		}
+
+		&--fb {
+			.sprite(@s-icon-fb);
+		}
+
+		&--ok {
+			.sprite(@s-icon-ok);
+		}
+	}
+
+	&__personal-area-wrapper {
+		float: right;
+	}
+
+	&__login {
+		padding-top: 31px;
+		padding-left: 27px;
+	}
+
+	&__signin {
+		font-weight: 700;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 7px;
+
+		@media (min-width: @screen-sm) {
+			margin-right: 10px;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			.sprite(@s-icon-key);
+			left: -27px;
+			top: 0;
+		}
+	}
+
+	&__cart {
+		margin-top: 28px;
+		font-size: 1.6rem;
+		font-weight: 700;
+		padding-left: 33px;
+		position: relative;
+		display: block;
+		color: @text-color;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			.sprite(@s-icon-cart);
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&__cart-counter {
+		font-size: .8rem;
+		font-weight: 700;
+		color: @gray-lighter;
+		padding: 0 4px;
+		height: 13px;
+		text-align: center;
+		background-color: @brand-primary;
+		border-radius: 50%;
+		position: absolute;
+		left: 15px;
+		top: -9px;
+	}
+
+	&__bottom {
+		height: 50px;
+		background-color: @menu-bg;
+		padding-top: 9px;
+		position: relative;
+
+		@media (min-width: @screen-sm) {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+
+	&__burger {
+		text-transform: uppercase;
+		font-weight: 700;
+		padding-left: 21px;
+		position: relative;
+		color: @gray-lighter;
+		margin-top: 11px;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: @gray-lighter;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			.sprite(@s-icon-burger);
+			top: 1px;
+			left: 0;
+		}
+	}
+
+	&__menu {
+		display: none;
+
+		@media (min-width: @screen-md) {
+			display: block;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			margin-top: 9px;
+
+			li {
+				display: inline-block;
+				margin-right: 25px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			a {
+				text-transform: uppercase;
+				color: @gray-lighter;
+				font-weight: 700;
+			}
+		}
+
+		&--active {
+			display: block;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			top: 41px;
+			left: 0;
+			background-color: @gray-lighter;
+			width: 100vw;
+			padding: 10px;
+			box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.26);
+
+			@media (min-width: @screen-sm) {
+				width: 100%;
+			}
+
+			li {
+				display: block;
+				border-bottom: 1px solid @gray;
+
+				a {
+					display: block;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+
+	&__search {
+		border-radius: @border-radius-base;
+		overflow: hidden;
+		position: relative;
+
+		@media (min-width: @screen-sm) {
+			float: right;
+		}
+	}
+
+	&__search-btn {
+		background: url(../img/icon-search.png) no-repeat center @gray;
+		border: 0;
+		width: 34px;
+		height: 33px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

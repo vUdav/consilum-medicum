@@ -19,6 +19,6 @@ gulp.task('build', function(callback) {
         'inject-favicon-markups',
         // 'js-doc',
         // 'scss-doc',
-        //'gh-pages',
+        'gh-pages',
         callback)
 });

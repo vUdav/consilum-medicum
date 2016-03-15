@@ -4,7 +4,7 @@ module.exports = {
 			Src: {
 				Styles: 'src/less/**/*.less',
 				MainStyleFile: 'src/less/style.less',
-				Jade: 'src/jade/**/[^_]*.jade',
+				Jade: 'src/jade/**/*.jade',
 				Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
 				PngSprite: 'src/img/sprite/**/*.png',
 				GHPages: 'build/**/*',
@@ -32,15 +32,12 @@ module.exports = {
 				Svg: 'dist/svg',
 				SvgSprite: 'dist/img',
 				SvgSpriteNoSvg: 'dist/svg/sprite/svg-sprite.png'
-			},
-			Watch: {
-				Jade: 'src/jade/**/*.jade'
 			}
 		},
 
 	// GitHub Pages options
 	ghpOptions: {
-		remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
+		remoteUrl: "git@github.com:vUdav/consilum-medicum.git"
 	},
 
 	// jsDoc3 options for JS documentation generating
@@ -56,12 +53,12 @@ module.exports = {
 	browserSync: {
 		server: './dist',
 		baseDir: './dist',
-		tunnel: true,
+		tunnel: false,
 		host: 'localhost',
 		port: 9000,
 		injectChanges: true,
-		delay: 300,
-		logPrefix: "Spadream"
+		// delay: 300,
+		logPrefix: "Consilum Medicum"
 	}
 
 };

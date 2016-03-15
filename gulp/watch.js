@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch', ['webserver'],function() {
     gulp.watch(config.pathTo.Src.Styles, ['less']);
-    gulp.watch(config.pathTo.Watch.Jade, ['jade']);
+    gulp.watch(config.pathTo.Src.Jade, ['jade']);
     gulp.watch(config.pathTo.Src.Images, ['images']);
     gulp.watch(config.pathTo.Src.PngSprite, ['png-sprite']);
     gulp.watch(config.pathTo.Src.SvgSprite, ['svg-sprite']);
