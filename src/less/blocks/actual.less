@@ -23,6 +23,7 @@
 		padding: 20px;
 		z-index: 2;
 		color: @white;
+		width: 100%;
 
 		p {
 			font-family: @font-family-serif;
@@ -65,5 +66,127 @@
 		top: 0;
 		left: 0;
 		z-index: 3;
+	}
+
+	&__slider-footer {
+		position: relative;
+	}
+
+	.owl-item.center {
+		.actual__slider-item {
+			background-color: @brand-primary;
+			border-bottom: 2px solid darken(@brand-primary,12.5%);
+			border-right: 2px solid darken(@brand-primary,12.5%);
+
+			&:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 10px 10px 10px;
+				border-color: transparent transparent @brand-primary transparent;
+				position: absolute;
+				top: -10px;
+				left: 50%;
+				transform: translate(-50%);
+			}
+		}
+
+		.actual__slider-item-title {
+			color: @white;
+		}
+
+		.actual__slider-item-category {
+			color: #b9dfff;
+		}
+
+		.actual__slider-item-watch {
+			color: #b9dfff;
+
+			&:before {
+				.sprite(@s-icon-eye--white);
+			}
+		}
+	}
+
+	&__slider-item {
+		background-color: @gray-light;
+		border-bottom: 2px solid darken(@gray-light,12.5%);
+		border-right: 2px solid darken(@gray-light,12.5%);
+		padding: 14px;
+		cursor: pointer;
+		position: relative;
+		height: 110px;
+	}
+
+	&__slider-item-title {
+		font-family: @font-family-serif;
+		font-style: italic;
+		color: @link-color;
+		line-height: 1.8rem;
+		height: 53px;
+		overflow: hidden;
+	}
+
+	&__slider-item-category {
+		position: absolute;
+		font-size: 1.2rem;
+		color: @text-color-gray;
+		bottom: 14px;
+		left: 14px;
+	}
+
+	&__slider-item-watch {
+		position: absolute;
+		font-size: 1.2rem;
+		color: @text-color-gray;
+		bottom: 14px;
+		right: 14px;
+		padding-left: 16px;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 3px;
+			.sprite(@s-icon-eye);
+		}
+	}
+
+	&__slider-nav {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		width: 100%;
+	}
+
+	&__slider-left {
+		display: block;
+		float: left;
+		transition: none;
+		position: relative;
+		z-index: 10;
+		left: -25px;
+		.sprite(@s-arrow-left);
+
+		&:hover {
+			.sprite(@s-arrow-left--hover);
+		}
+	}
+
+	&__slider-right {
+		display: block;
+		float: right;
+		transition: none;
+		position: relative;
+		z-index: 10;
+		right: -25px;
+		.sprite(@s-arrow-right);
+
+		&:hover {
+			.sprite(@s-arrow-right--hover);
+		}
 	}
 }
