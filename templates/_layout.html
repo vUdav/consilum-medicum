@@ -5,12 +5,112 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @font-face {
+        font-family: 'ALSRubl';
+        src: url('./fonts/rouble/rouble-webfont.eot');
+        src: url('./fonts/rouble/rouble-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/rouble/rouble-webfont.woff') format('woff'), url('./fonts/rouble/rouble-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
 
   <body>
-    <div class="body-wrapper">
-      <main class="main"> </main>
+    <div class="body-wrapper container">
+      <header class="page-header">
+        <div class="page-header__top row">
+          <div class="page-header__logo-area col-xs-6 col-sm-8 col-md-6"><a href="" class="page-header__mainpage-link">На главную</a>
+            <a href="" class="page-header__logo"></a>
+            <div class="page-header__many-doctors">С нами уже<br class="visible-xs"><strong> 100 000</strong> врачей</div><a href="" class="btn hidden-xs">Присоединиться</a>
+            <a href="" class="page-header__appstore hidden-xs"></a>
+          </div>
+          <div class="page-header__socials-area hidden-xs hidden-sm col-md-3"><strong class="page-header__socials-title">Мы в социальных сетях</strong>
+            <div class="page-header__socials-list-pharma">Для фармацевтов
+              <ul class="page-header__social-list">
+                <li class="page-header__social-item page-header__social-item--vk">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--fb">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--ok">
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-header__sicials-list-doctors">Для врачей
+              <ul class="page-header__social-list">
+                <li class="page-header__social-item page-header__social-item--vk">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--fb">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--ok">
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-header__personal-area col-xs-6 col-sm-4 col-md-3">
+            <div class="page-header__personal-area-wrapper">
+              <div class="page-header__login"><a href="" class="page-header__signin">Войти</a><br class="visible-xs"><a href="" class="page-header__signup">Зарегистрироваться</a></div><a href="" class="page-header__cart"><span class="page-header__cart-counter">1</span>2 000<span class="rouble">a</span></a>              </div>
+          </div>
+        </div>
+        <div class="page-header__bottom row">
+          <div class="col-xs-6 col-sm-8 col-md-9"><a id="menu-show" href="" class="page-header__burger visible-xs visible-sm">Меню</a>
+            <menu class="page-header__menu">
+              <li><a href="">ЖУРНАЛЫ</a></li>
+              <li><a href="">ВИДЕОКОНФЕРЕНЦИИ</a></li>
+              <li><a href="">МЕРОПРИЯТИЯ</a></li>
+              <li><a href="">КОМПАНИИ</a></li>
+              <li><a href="">ЛЕКАРСТВА</a></li>
+              <li><a href="">ПАРТНЕРЫ</a></li>
+              <li><a href="">АВТОРАМ</a></li>
+            </menu>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <form id="form-search" action="" class="page-header__search"> <input type="text" placeholder="Поиск" name="search"> <input type="submit" value="" class="page-header__search-btn"> </form>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__row row"> </div>
+      </main>
     </div>
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <div class="page-footer__row row">
+          <div class="col-xs-6 col-sm-4 col-md-4">
+            <a href="#" class="page-footer__logo"><img src="img/logo-min.png" alt=""></a>
+            <div class="page-footer__copyright"> © 1999-2015<br> Все права защищены<br> Администрация сайта:<br> <a href="mailto:content@con-med.ru">content@con-med.ru</a> </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <div class="page-footer__info">
+              <h4>ИНФОРМАЦИЯ</h4>
+              <ul class="page-footer__info-list">
+                <li class="page-footer__info-item"><a href="#">О сайте</a></li>
+                <li class="page-footer__info-item"><a href="#">Правила</a></li>
+                <li class="page-footer__info-item"><a href="#">Соглашения</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <ul class="page-footer__info-list page-footer__info-list--margin-top">
+              <li class="page-footer__info-item"><a href="#">Помощь</a></li>
+              <li class="page-footer__info-item"><a href="#">Контакты</a></li>
+              <li class="page-footer__info-item"><a href="#">Автора</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+            <form action="#" class="page-footer__search hidden-xs"> <input type="text" placeholder="Поиск" required class="page-footer__serch-input"> <input type="submit" value="" class="page-footer__search-btn"> </form>
+            <div class="page-footer__developer"> Разработка сайта <a href="http://novoxpro.ru">novoxpro.ru</a><br> Поддержка и продвижение <a href="http://softcan.ru">softcan.ru</a> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
