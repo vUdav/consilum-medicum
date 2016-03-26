@@ -1,0 +1,115 @@
+.journal-carousel {
+	padding-top: 30px;
+	padding-bottom: 27px;
+	position: relative;
+
+	&__all-journal-top {
+		position: absolute;
+		top: 27px;
+		right: 0;
+	}
+
+	h2 {
+		margin-bottom: 36px;
+	}
+
+	&__carousel {
+		margin-bottom: 26px;
+	}
+
+	&__item-top {
+		padding-top: 10px;
+
+		img {
+			float: left;
+			width: 70px !important;
+			box-shadow: 0px 3px 15px 0px rgba(40, 49, 57, 0.34);
+			margin-left: 10px;
+		}
+
+		h3 {
+			padding-left: 90px;
+			line-height: 2.2rem;
+			font-size: 1.6rem;
+		}
+
+		span {
+			display: block;
+			padding-left: 90px;
+			line-height: 2.2rem;
+		}
+	}
+
+	&__item-bottom {
+		clear: both;
+	}
+
+	&__item-bottom {
+		padding-top: 15px;
+	}
+
+	&__item-bottom-title {
+		color: #828f9c;
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin-bottom: 7px;
+	}
+
+	&__item-bottom-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		a {
+			font-family: @font-family-serif;
+			font-style: italic;
+			line-height: 1.8rem;
+		}
+	}
+
+	&__nav {
+		position: absolute;
+		top: 130px;
+		width: 100%;
+	}
+
+	&__nav-left {
+		display: block;
+		float: left;
+		transition: none;
+		position: relative;
+		z-index: 10;
+		left: -25px;
+		.sprite(@s-arrow-left);
+
+		&:hover {
+			.sprite(@s-arrow-left--hover);
+		}
+	}
+
+	&__nav-right {
+		display: block;
+		float: right;
+		transition: none;
+		position: relative;
+		z-index: 10;
+		right: -10px;
+		.sprite(@s-arrow-right);
+
+		@media (min-width: @screen-md) {
+			right: 0;
+		}
+
+		&:hover {
+			.sprite(@s-arrow-right--hover);
+		}
+	}
+}
