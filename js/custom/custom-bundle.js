@@ -3,6 +3,7 @@ $(document).ready(function() {
 	// Init functions
 	mobileMenu();
 	actualSlider();
+	journalCarousel();
 
 	// Mobile menu
 	function mobileMenu() {
@@ -76,6 +77,37 @@ $(document).ready(function() {
 
 		// Change carousel top info when carousel changed
 		carousel.on('changed.owl.carousel',carouselChangeInfo);
+	}
+
+	// Journal carousel
+	function journalCarousel() {
+		var carousel = $('#journal-carousel');
+		carousel.owlCarousel({
+			nav: false,
+			dots: false,
+			loop: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				854: {
+					items: 2
+				},
+				1160: {
+					items: 4
+				}
+			}
+		});
+
+		// Arrow triggers
+		$('.journal-carousel__nav-left').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('prev.owl.carousel');
+		});
+		$('.journal-carousel__nav-right').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('next.owl.carousel');
+		});
 	}
 
 });
