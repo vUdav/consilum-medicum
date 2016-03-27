@@ -4,6 +4,8 @@ $(document).ready(function() {
 	mobileMenu();
 	actualSlider();
 	journalCarousel();
+	videoconfPastCarousel();
+	eventCarousel();
 
 	// Mobile menu
 	function mobileMenu() {
@@ -86,6 +88,7 @@ $(document).ready(function() {
 			nav: false,
 			dots: false,
 			loop: true,
+			margin: 20,
 			responsive: {
 				0: {
 					items: 1
@@ -105,6 +108,72 @@ $(document).ready(function() {
 			carousel.trigger('prev.owl.carousel');
 		});
 		$('.journal-carousel__nav-right').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('next.owl.carousel');
+		});
+	}
+
+	// Videoconf past carousel
+	function videoconfPastCarousel() {
+		var carousel = $('#videoconf-past-carousel');
+
+		carousel.owlCarousel({
+			nav: false,
+			dots: false,
+			loop: true,
+			margin: 20,
+			responsive: {
+				0: {
+					items: 1
+				},
+				854: {
+					items: 2
+				},
+				1160: {
+					items: 4
+				}
+			}
+		});
+
+		// Arrow triggers
+		$('.videoconf-main__past-nav-left').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('prev.owl.carousel');
+		});
+		$('.videoconf-main__past-nav-right').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('next.owl.carousel');
+		});
+	}
+
+	// Events carousel
+	function eventCarousel() {
+		var carousel = $('#event-carousel');
+
+		carousel.owlCarousel({
+			nav: false,
+			dots: false,
+			loop: true,
+			margin: 20,
+			responsive: {
+				0: {
+					items: 1
+				},
+				854: {
+					items: 2
+				},
+				1160: {
+					items: 3
+				}
+			}
+		});
+
+		// Arrow triggers
+		$('.events-main__nav-left').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('prev.owl.carousel');
+		});
+		$('.events-main__nav-right').click(function(e) {
 			e.preventDefault();
 			carousel.trigger('next.owl.carousel');
 		});
