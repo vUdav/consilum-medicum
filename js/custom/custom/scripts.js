@@ -6,6 +6,7 @@ $(document).ready(function() {
 	journalCarousel();
 	videoconfPastCarousel();
 	eventCarousel();
+	personalMenu();
 
 	// Mobile menu
 	function mobileMenu() {
@@ -176,6 +177,19 @@ $(document).ready(function() {
 		$('.events-main__nav-right').click(function(e) {
 			e.preventDefault();
 			carousel.trigger('next.owl.carousel');
+		});
+	}
+
+	// Personal area menu trigger
+	function personalMenu() {
+		$('#personal-menu').on('click',function(){
+			$('.personal-area__menu-list').toggleClass('personal-area__menu-list--active');
+
+			if($('.personal-area__menu-list').hasClass('personal-area__menu-list--active')) {
+				$('.personal-area__menu-list').slideDown(500);
+			} else {
+				$('.personal-area__menu-list').slideUp(500);
+			}
 		});
 	}
 
