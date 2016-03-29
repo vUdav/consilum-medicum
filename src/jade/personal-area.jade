@@ -1,0 +1,59 @@
+extends templates/_layout
+
+block content
+	section.banner-horizontal.banner-horizontal--margin-bottom.col-xs-12
+		.banner-horizontal__wrapper
+			a(href="#")
+				img(src="img/pics/banner1.jpg", alt="")
+
+	section.personal-area.col-xs-12
+		.personal-area__wrapper
+			h1.personal-area__title Ваша личная страница
+			.row
+				.personal-area__menu.col-xs-12.col-sm-4.col-md-3
+					.personal-area__menu-burger#personal-menu.visible-xs Профиль
+					ul.personal-area__menu-list
+						li.personal-area__menu-item
+							a(href="") Лента
+						li.personal-area__menu-item
+							a(href="") Журналы
+						li.personal-area__menu-item
+							a(href="") Видеоконференции
+						li.personal-area__menu-item
+							a(href="") Мероприятия
+						li.personal-area__menu-item
+							a(href="") Вакансии
+						li.personal-area__menu-item
+							a(href="") Избранное
+						li.personal-area__menu-item.personal-area__menu-item--active
+							a(href="") Профиль
+						li.personal-area__menu-item
+							a(href="") Покупки
+				.personal-area__card.col-xs-12.col-sm-8.col-md-9
+					.personal-area__img
+						img(src="img/pics/userpic.jpg", alt="")
+					.personal-area__description
+						.personal-area__name Константин Константинович
+						.personal-area__online-status Был на сайте: 10 ноября 2015
+						.personal-area__spec Врач-терапевт высшей категории
+						.personal-area__info-list
+							ul.list
+								li.list__item
+									span.list__key
+										span Дата рождения
+									span.list__value 5 июля 1970 года
+								li.list__item
+									span.list__key
+										span Город
+									span.list__value Российская Федерация, г. Агрыз
+						.personal-area__work-list
+							strong Работа:
+							ul.list.list--mobile-newline
+								li.list__item
+									span.list__key
+										span Тип медицинского учреждения
+									span.list__value Диагностический центр
+								li.list__item
+									span.list__key
+										span Cпециализация
+									span.list__value Авиационная и космическая медицина

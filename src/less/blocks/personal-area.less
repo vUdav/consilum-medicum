@@ -1,0 +1,146 @@
+.personal-area {
+
+	&__title {
+		font-size: 2.6rem;
+		margin-bottom: 14px;
+	}
+
+	&__menu {
+		margin-bottom: 26px;
+
+		@media (min-width: @screen-sm) {
+			margin-bottom: 0;
+			margin-left: -50px;
+		}
+	}
+
+	&__menu-burger {
+		height: 34px;
+		background-color: @gray-light;
+		line-height: 3.4rem;
+		color: @brand-primary;
+		font-size: 1.6rem;
+		font-weight: 700;
+		position: relative;
+		padding-left: 19px;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 12px;
+			right: 30px;
+			.sprite(@s-burger-blue);
+		}
+	}
+
+	&__menu-list {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		background-color: @gray-light;
+
+		@media (min-width: @screen-sm) {
+			display: block;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		a {
+			display: block;
+			padding: 10px 19px;
+			font-size: 1.6rem;
+
+			@media (min-width: @screen-sm) {
+				padding: 0;
+				line-height: 4rem;
+				padding-left: 51px;
+				font-weight: 700;
+				position: relative;
+
+				&:after {
+					content: "";
+					position: absolute;
+					right: -5px;
+					top: 0;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 20px 0 20px 5px;
+					border-color: transparent transparent transparent #828f9c;
+					opacity: 0;
+					transition: @transition-time opacity;
+				}
+
+				&:hover {
+					background-color: #828f9c;
+					color: @white;
+
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&__menu-item {
+		&--active {
+			a {
+				background-color: #828f9c;
+				color: @white;
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__img {
+		margin: 0 auto;
+		width: 167px;
+		height: 167px;
+		overflow: hidden;
+		margin-bottom: 24px;
+
+		@media (min-width: @screen-sm) {
+			width: 170px;
+			height: 170px;
+			float: left;
+		}
+	}
+
+	&__description {
+
+		@media (min-width: @screen-sm) {
+			padding-left: 190px;
+		}
+	}
+
+	&__name {
+		font-size: 2.6rem;
+		font-weight: 700;
+		margin-bottom: 8px;
+		line-height: 2rem;
+	}
+
+	&__online-status {
+		color: @text-color-gray--light;
+		margin-bottom: 9px;
+	}
+
+	&__spec {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 22px;
+	}
+
+	&__work-list {
+		strong {
+			display: block;
+			margin-bottom: 14px;
+		}
+	}
+}
