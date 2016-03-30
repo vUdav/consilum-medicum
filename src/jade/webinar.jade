@@ -1,0 +1,79 @@
+extends templates/_layout
+
+block content
+	include components/_breadcrumbs
+
+	section.webinar.col-xs-12
+		.webinar__wrapper.row
+			h1.h2.webinar__title.col-xs-12 Вебинар "Рациональная фармакотерапия болевого синдрома – акцент на НПВС"
+			.col-xs-12
+				.row
+					.webinar__player.col-xs-12.col-sm-9
+						img(src="img/pics/player.jpg", alt="")
+					.webinar__items
+						.webinar__item.webinar__item--active.col-xs-6.col-sm-3
+							a(href="")
+								.webinar__item-img
+									img(src="img/pics/videoconference1.jpg", alt="")
+								span Вебинар "Рациональная фармакотерапия болевого Вебинар "Рациональная фармакотерапия болевого
+								.webinar__item-author Аникин Г. С.
+						.webinar__item.col-xs-6.col-sm-3
+							a(href="")
+								.webinar__item-img
+									img(src="img/pics/videoconference2.jpg", alt="")
+								span Вопросы
+								.webinar__item-author Аникин Г. С.
+
+			.webinar__description.col-xs-12.col-md-9
+				.webinar__info
+					.webinar__date 08 Октября 2015
+					.webinar__view Количество просмотров:
+						strong  315
+					.clearfix
+					.webinar__spec
+						span Специализации:
+						a(href="") Клиническая фармакология
+				.webinar__program
+					.webinar__predsed Председатели:  Подзолкова Н.М., Роговская С.И., Иловайская И.А.
+					.webinar__program-title Программа симпозиума:
+					ul.webinar__program-list
+						li.webinar__program-item
+							strong 13:00–13:25
+							|  Проф. Подзолкова Н.М. (Москва) Ациклические маточные кровотечения репродуктивного периода: оправдано ли применение гестагенов (результаты международного исследования)
+						li.webinar__program-item
+							strong 13:25–13:50
+							|  Проф. Роговская С.И. (Москва) Бактериальный вагиноз и патология шейки матки. Стандарты диагностики и терапии
+						li.webinar__program-item
+							strong 13:50–14:15
+							|  К.м.н. Иловайская И.А. (Москва) Antiаge-терапия. Возможности здорового долголетия
+						li.webinar__program-item
+							strong 14:15–14:30
+							|  Дискуссия mollis orci, sed rhoncus sapien nunc eget odio.
+				.webinar__wishlist.row
+					.webinar__socials.col-xs-6
+						script.
+							(function() {
+								if (window.pluso)if (typeof window.pluso.start == "function") return;
+								if (window.ifpluso==undefined) { window.ifpluso = 1;
+									var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+									s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+									s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+									var h=d[g]('body')[0];
+									h.appendChild(s);
+								}})();
+						div(class="pluso" data-background="transparent" data-options="small,square,line,horizontal,counter,theme=04" data-services="tumblr,facebook,twitter,email")
+					.webinar__btn.col-xs-6
+						a.btn.btn--wishlist(href="")
+							span.btn__text В избранное
+							span.btn__count 19
+
+			aside.sidebar.col-xs-12.col-md-3
+				.sidebar__wrapper.row
+					.sidebar__banner.col-xs-12.col-sm-6.col-md-12
+						a(href="")
+							img(src="img/pics/banner3.jpg", alt="")
+					.sidebar__social-wrapper.col-xs-12.col-sm-6.col-md-12
+						.sidebar__social
+							img(src="img/pics/social.jpg", alt="")
+						.sidebar__social
+						.sidebar__social
