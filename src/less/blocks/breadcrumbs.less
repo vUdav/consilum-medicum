@@ -1,0 +1,35 @@
+.breadcrumbs {
+	margin-bottom: 28px;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+
+		&:after {
+			content: " > ";
+			color: @text-color-gray;
+			font-size: 1.3rem;
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	a {
+		color: @text-color-gray;
+		text-decoration: underline;
+		font-size: 1.3rem;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
