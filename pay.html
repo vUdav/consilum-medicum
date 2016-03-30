@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @font-face {
+        font-family: 'ALSRubl';
+        src: url('./fonts/rouble/rouble-webfont.eot');
+        src: url('./fonts/rouble/rouble-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/rouble/rouble-webfont.woff') format('woff'), url('./fonts/rouble/rouble-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="body-wrapper container">
+      <header class="page-header">
+        <div class="page-header__top row">
+          <div class="page-header__logo-area col-xs-6 col-sm-8 col-md-6"><a href="" class="page-header__mainpage-link">На главную</a>
+            <a href="" class="page-header__logo"></a>
+            <div class="page-header__many-doctors">С нами уже<br class="visible-xs"><strong> 100 000</strong> врачей</div><a href="" class="btn hidden-xs">Присоединиться</a>
+            <a href="" class="page-header__appstore hidden-xs"></a>
+          </div>
+          <div class="page-header__socials-area hidden-xs hidden-sm col-md-3"><strong class="page-header__socials-title">Мы в социальных сетях</strong>
+            <div class="page-header__socials-list-pharma">Для фармацевтов
+              <ul class="page-header__social-list">
+                <li class="page-header__social-item page-header__social-item--vk">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--fb">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--ok">
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-header__sicials-list-doctors">Для врачей
+              <ul class="page-header__social-list">
+                <li class="page-header__social-item page-header__social-item--vk">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--fb">
+                  <a href=""></a>
+                </li>
+                <li class="page-header__social-item page-header__social-item--ok">
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-header__personal-area col-xs-6 col-sm-4 col-md-3">
+            <div class="page-header__personal-area-wrapper">
+              <div class="page-header__login"><a href="" class="page-header__signin">Войти</a><br class="visible-xs"><a href="" class="page-header__signup">Зарегистрироваться</a></div><a href="" class="page-header__cart"><span class="page-header__cart-counter">1</span>2 000<span class="rouble">a</span></a>              </div>
+          </div>
+        </div>
+        <div class="page-header__bottom row">
+          <div class="col-xs-6 col-sm-8 col-md-9"><a id="menu-show" href="" class="page-header__burger visible-xs visible-sm">Меню</a>
+            <menu class="page-header__menu">
+              <li><a href="">ЖУРНАЛЫ</a></li>
+              <li><a href="">ВИДЕОКОНФЕРЕНЦИИ</a></li>
+              <li><a href="">МЕРОПРИЯТИЯ</a></li>
+              <li><a href="">КОМПАНИИ</a></li>
+              <li><a href="">ЛЕКАРСТВА</a></li>
+              <li><a href="">ПАРТНЕРЫ</a></li>
+              <li><a href="">АВТОРАМ</a></li>
+            </menu>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <form id="form-search" action="" class="page-header__search"> <input type="text" placeholder="Поиск" name="search"> <input type="submit" value="" class="page-header__search-btn"> </form>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__row row">
+          <section class="breadcrumbs col-xs-12">
+            <ul>
+              <li><a href="">Пример</a></li>
+              <li><a href="">Хлебных крошек</a></li>
+            </ul>
+          </section>
+          <section class="pay col-xs-12">
+            <div class="pay__wrapper">
+              <h1 class="h2 pay__title">Оформление заказа</h1>
+              <div class="pay__description">
+                <p>Чтобы оплатить услугу, выберите способ оплаты, нажав на соответствующий значок и нажмите «Оформить заказ»</p>
+              </div>
+              <form action="" class="pay__form">
+                <div class="pay__method">
+                  <h3>Выберите способ оплаты:</h3>
+                  <div class="pay__method-item"> <input id="pay-method-card" type="radio" name="pay-method" checked> <label for="pay-method-card">
+                      <div class="pay__method-item-img"><img src="img/card-pay.png" alt=""></div><strong>Банковской картой</strong>
+                      <p>Оплата банковскими картами VISA, MasterCard, American Express</p>
+                    </label>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="pay__method-item"> <input id="pay-method-yandex" type="radio" name="pay-method"> <label for="pay-method-yandex">
+                      <div class="pay__method-item-img"><img src="img/yandex-pay.png" alt=""></div><strong>Яндекс.Деньги</strong>
+                      <p>Оплата со счета Яндекс.Деньги или с помощью банковской карты VISA, MasterCard</p>
+                    </label>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="pay__method-item"> <input id="pay-method-wm" type="radio" name="pay-method"> <label for="pay-method-wm">
+                      <div class="pay__method-item-img"><img src="img/wm-pay.png" alt=""></div><strong>WebMoney</strong>
+                      <p>Оплата со счета WebMoney</p>
+                    </label>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="pay__order-list">
+                  <h3>Покупки в заказе:</h3>
+                  <div class="pay__list-title">
+                    <div class="row">
+                      <div class="pay__list-title-item col-xs-12 col-sm-8">Покупка</div>
+                      <div class="pay__list-title-item hidden-xs col-sm-2">Скидка</div>
+                      <div class="pay__list-title-item hidden-xs col-sm-2">Цена</div>
+                    </div>
+                  </div>
+                  <div class="pay__list-order">
+                    <div class="row">
+                      <div class="pay__list-img col-xs-4"><img src="img/pics/videoconference1.jpg" alt=""></div>
+                      <div class="pay__list-info col-xs-8 col-sm-4"><strong>Доступ к конференции</strong><a href="">Вебинар "Минимизация риска геморрагических осложнений на фоне антикоагулянтной и антитромботической терапии"</a></div>
+                      <div class="pay__list-disqount col-xs-8 col-xs-offset-4 col-sm-2 col-sm-offset-0"><span>Скидка</span>0%</div>
+                      <div class="pay__list-price col-xs-8 col-xs-offset-4 col-sm-2 col-sm-offset-0"><span>Цена</span>500 руб.</div>
+                    </div>
+                  </div>
+                  <div class="pay__list-result">Итого к оплате: 500 руб.</div>
+                </div>
+                <div class="pay__comments">
+                  <h3>Комментарии к заказу:</h3> <textarea></textarea> </div>
+                <div class="pay__btn"> <button type="submit" class="btn btn--blue btn--center">Оформить заказ</button> </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <div class="page-footer__row row">
+          <div class="col-xs-6 col-sm-4 col-md-4">
+            <a href="#" class="page-footer__logo"><img src="img/logo-min.png" alt=""></a>
+            <div class="page-footer__copyright"> © 1999-2015<br> Все права защищены<br> Администрация сайта:<br> <a href="mailto:content@con-med.ru">content@con-med.ru</a> </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <div class="page-footer__info">
+              <h4>ИНФОРМАЦИЯ</h4>
+              <ul class="page-footer__info-list">
+                <li class="page-footer__info-item"><a href="#">О сайте</a></li>
+                <li class="page-footer__info-item"><a href="#">Правила</a></li>
+                <li class="page-footer__info-item"><a href="#">Соглашения</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <ul class="page-footer__info-list page-footer__info-list--margin-top">
+              <li class="page-footer__info-item"><a href="#">Помощь</a></li>
+              <li class="page-footer__info-item"><a href="#">Контакты</a></li>
+              <li class="page-footer__info-item"><a href="#">Автора</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+            <form action="#" class="page-footer__search hidden-xs"> <input type="text" placeholder="Поиск" required class="page-footer__serch-input"> <input type="submit" value="" class="page-footer__search-btn"> </form>
+            <div class="page-footer__developer"> Разработка сайта <a href="http://novoxpro.ru">novoxpro.ru</a><br> Поддержка и продвижение <a href="http://softcan.ru">softcan.ru</a> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
+<div class="scripts">
+  <!-- Set JS assets-->
+  <script src="js/vendor/vendor-bundle.min.js" defer></script>
+  <script src="js/custom/custom-bundle.min.js" defer></script>
+</div>
