@@ -53,4 +53,26 @@
 		background-color: @brand-primary;
 		color: @white;
 	}
+
+	&--arrow-left {
+		&:before {
+			content: "";
+			display: inline-block;
+			.sprite(@s-btn-arrow-left);
+			margin-right: 10px;
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	&--arrow-right {
+		&:after {
+			content: "";
+			display: inline-block;
+			.sprite(@s-btn-arrow-right);
+			margin-left: 10px;
+			position: relative;
+			top: 1px;
+		}
+	}
 }
