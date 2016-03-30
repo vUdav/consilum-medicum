@@ -3,8 +3,30 @@ input[type=text] {
 	height: 33px;
 	color: @brand-primary;
 	line-height: 2rem;
-	border: 0;
+	border: 1px solid #bebebe;
 	padding-left: 19px;
 	padding-right: 53px;
 	width: 100%;
+	border-radius: 2px;
+}
+
+input[type=checkbox] {
+	display: none;
+
+	& + label {
+		&:before {
+			content: "";
+			display: inline-block;
+			.sprite(@s-checkbox);
+			margin-right: 6px;
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	&:checked + label {
+		&:before {
+			.sprite(@s-checkbox-checked);
+		}
+	}
 }
