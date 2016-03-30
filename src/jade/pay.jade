@@ -2,3 +2,64 @@ extends templates/_layout
 
 block content
 	include components/_breadcrumbs
+
+	section.pay.col-xs-12
+		.pay__wrapper
+			h1.h2.pay__title Оформление заказа
+			.pay__description
+				p Чтобы оплатить услугу, выберите способ оплаты, нажав на соответствующий значок и нажмите «Оформить заказ»
+			form.pay__form(action="")
+
+				.pay__method
+					h3 Выберите способ оплаты:
+					.pay__method-item
+						input#pay-method-card(type="radio" name="pay-method" checked)
+						label(for="pay-method-card")
+							.pay__method-item-img
+								img(src="img/card-pay.png", alt="")
+							strong Банковской картой
+							p Оплата банковскими картами VISA, MasterCard, American Express
+						.clearfix
+					.pay__method-item
+						input#pay-method-yandex(type="radio" name="pay-method")
+						label(for="pay-method-yandex")
+							.pay__method-item-img
+								img(src="img/yandex-pay.png", alt="")
+							strong Яндекс.Деньги
+							p Оплата со счета Яндекс.Деньги или с помощью банковской карты VISA, MasterCard
+						.clearfix
+					.pay__method-item
+						input#pay-method-wm(type="radio" name="pay-method")
+						label(for="pay-method-wm")
+							.pay__method-item-img
+								img(src="img/wm-pay.png", alt="")
+							strong WebMoney
+							p Оплата со счета WebMoney
+						.clearfix
+
+				.pay__order-list
+					h3 Покупки в заказе:
+					.pay__list-title
+						.row
+							.pay__list-title-item.col-xs-12.col-sm-8 Покупка
+							.pay__list-title-item.hidden-xs.col-sm-2 Скидка
+							.pay__list-title-item.hidden-xs.col-sm-2 Цена
+					.pay__list-order
+						.row
+							.pay__list-img.col-xs-4
+								img(src="img/pics/videoconference1.jpg", alt="")
+							.pay__list-info.col-xs-8.col-sm-4
+								strong Доступ к конференции
+								a(href="") Вебинар "Минимизация риска геморрагических осложнений на фоне антикоагулянтной и антитромботической терапии"
+							.pay__list-disqount.col-xs-8.col-xs-offset-4.col-sm-2.col-sm-offset-0
+								span Скидка
+								|0%
+							.pay__list-price.col-xs-8.col-xs-offset-4.col-sm-2.col-sm-offset-0
+								span Цена
+								|500 руб.
+					.pay__list-result Итого к оплате: 500 руб.
+				.pay__comments
+					h3 Комментарии к заказу:
+					textarea
+				.pay__btn
+					button.btn.btn--blue.btn--center(type="submit") Оформить заказ
