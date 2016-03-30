@@ -7,6 +7,8 @@ $(document).ready(function() {
 	videoconfPastCarousel();
 	eventCarousel();
 	personalMenu();
+	blockquoteHide();
+	archiveYear();
 
 	// Mobile menu
 	function mobileMenu() {
@@ -190,6 +192,39 @@ $(document).ready(function() {
 			} else {
 				$('.personal-area__menu-list').slideUp(500);
 			}
+		});
+	}
+
+	// Blockquote
+	function blockquoteHide() {
+		$('.post__bq-title').on('click',function(){
+			$(this).toggleClass('post__bq-title--hide');
+			if($(this).hasClass('post__bq-title--hide')) {
+				$(this).siblings('.post__bq-text').slideUp(500);
+			} else {
+				$(this).siblings('.post__bq-text').slideDown(500);
+			}
+		});
+	}
+
+	// Archive year
+	function archiveYear() {
+		var carousel = $('#archive-year');
+		carousel.owlCarousel({
+			items: 4,
+			nav: false,
+			dots: false,
+			startPosition: -1
+		});
+
+		// Arrow triggers
+		$('.sidebar__archive-nav-left').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('prev.owl.carousel');
+		});
+		$('.sidebar__archive-nav-right').click(function(e) {
+			e.preventDefault();
+			carousel.trigger('next.owl.carousel');
 		});
 	}
 
