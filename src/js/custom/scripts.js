@@ -235,14 +235,19 @@ function archiveYear() {
 
 // fixed menu
 function fixedMenu() {
-	var position = $('#fixed-menu').offset().top;
+	const position = $('#fixed-menu').offset().top;
 	var scrollPos = $(window).scrollTop();
 
-	if (scrollPos >= 150) {
-		$('#fixed-menu').addClass('page-header__bottom--fixed');
-		$('.page-header__top').css('margin-bottom','50px');
+	if (scrollPos >= position) {
+		$('.page-header__bottom-wrapper').addClass('page-header__bottom-wrapper--fixed');
 	} else {
-		$('#fixed-menu').removeClass('page-header__bottom--fixed');
-		$('.page-header__top').css('margin-bottom','0');
+		$('.page-header__bottom-wrapper').removeClass('page-header__bottom-wrapper--fixed');
 	}
+}
+
+// fixed horizonta banner
+function fixedHorizontalBanner() {
+	var position = $('#fixed-hor-banner').offset().top;
+	var scrollPos = $(window).scrollTop();
+
 }

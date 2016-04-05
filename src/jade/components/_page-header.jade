@@ -38,25 +38,26 @@ header.page-header
 					|2 000
 					span.rouble a
 
-	.page-header__bottom.row#fixed-menu
-		.col-xs-6.col-sm-8.col-md-9
-			a#menu-show.page-header__burger.visible-xs.visible-sm(href="") Меню
-			menu.page-header__menu
-				li
-					a(href="") ЖУРНАЛЫ
-				li
-					a(href="") ВИДЕОКОНФЕРЕНЦИИ
-				li
-					a(href="") МЕРОПРИЯТИЯ
-				li
-					a(href="") КОМПАНИИ
-				li
-					a(href="") ЛЕКАРСТВА
-				li
-					a(href="") ПАРТНЕРЫ
-				li
-					a(href="") АВТОРАМ
-		.col-xs-6.col-sm-4.col-md-3
-			form.page-header__search#form-search(action="")
-				input(type="text", placeholder="Поиск", name="search")
-				input(type="submit", value="").page-header__search-btn
+	.page-header__bottom#fixed-menu
+		.page-header__bottom-wrapper.row
+			.col-xs-6.col-sm-8.col-md-9
+				a#menu-show.page-header__burger.visible-xs.visible-sm(href="") Меню
+				menu.page-header__menu
+					li
+						a(href="") ЖУРНАЛЫ
+					li
+						a(href="") ВИДЕОКОНФЕРЕНЦИИ
+					li
+						a(href="") МЕРОПРИЯТИЯ
+					li
+						a(href="") КОМПАНИИ
+					li
+						a(href="") ЛЕКАРСТВА
+					li
+						a(href="") ПАРТНЕРЫ
+					li
+						a(href="") АВТОРАМ
+			.col-xs-6.col-sm-4.col-md-3
+				form.page-header__search#form-search(action="")
+					input(type="text", placeholder="Поиск", name="search")
+					input(type="submit", value="").page-header__search-btn
