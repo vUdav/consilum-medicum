@@ -2,18 +2,28 @@
 
 	&__wrapper {
 		text-align: center;
+		width: 300px;
 		height: 90px;
-		overflow: hidden;
+		margin: 0 auto;
+
+		@media (min-width: @screen-sm) {
+			width: 730px;
+		}
+
+		@media (min-width: @screen-md) {
+			width: 990px;
+		}
 	}
 
 	a {
 		display: block;
+		height: 100%;
+		width: 100%;
 	}
 
 	img {
 		height: 100%;
-		width: auto;
-		max-width: none;
+		width: 100%;
 	}
 
 	&--margin-bottom {
