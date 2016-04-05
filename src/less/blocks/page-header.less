@@ -167,6 +167,22 @@
 			padding-left: 35px;
 			padding-right: 35px;
 		}
+
+		&--fixed {
+			position: fixed;
+			top: 0;
+			z-index: 1000;
+			transition: none;
+			width: 100%;
+
+			@media (min-width: @screen-sm) {
+				width: 854px;
+			}
+
+			@media (min-width: @screen-md) {
+				width: 1160px;
+			}
+		}
 	}
 
 	&__burger {
