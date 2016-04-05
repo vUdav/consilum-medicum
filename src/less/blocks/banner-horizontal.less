@@ -1,11 +1,5 @@
 .banner-horizontal {
-
-	&--fixed {
-		position: fixed;
-		bottom: 100px;
-		left: 0;
-		z-index: 1000;
-	}
+	height: 90px;
 
 	&__wrapper {
 		text-align: center;
@@ -19,6 +13,14 @@
 
 		@media (min-width: @screen-md) {
 			width: 990px;
+		}
+
+		&--fixed {
+			position: fixed;
+			bottom: 50px;
+			left: 50%;
+			transform: translate(-50%);
+			z-index: 1000;
 		}
 	}
 

@@ -9,10 +9,12 @@ $(document).ready(function() {
 	blockquoteHide();
 	archiveYear();
 	fixedMenu();
+	fixedHorizontalBanner();
 });
 
 $(window).scroll(function(){
 	fixedMenu();
+	fixedHorizontalBanner();
 });
 
 // Mobile menu
@@ -248,6 +250,13 @@ function fixedMenu() {
 // fixed horizonta banner
 function fixedHorizontalBanner() {
 	var position = $('#fixed-hor-banner').offset().top;
-	var scrollPos = $(window).scrollTop();
+	var elementHeight = $('#fixed-hor-banner').height();
+	var windowHeight = $(window).height();
+	var scrollPos = $(window).scrollTop() + windowHeight - elementHeight - 50;
 
+	if (scrollPos <= position) {
+		$('#fixed-hor-banner').find('.banner-horizontal__wrapper').addClass('banner-horizontal__wrapper--fixed');
+	} else {
+		$('#fixed-hor-banner').find('.banner-horizontal__wrapper').removeClass('banner-horizontal__wrapper--fixed');
+	}
 }
