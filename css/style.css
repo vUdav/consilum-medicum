@@ -1581,7 +1581,13 @@ p {
 }
 .btn--wishlist span {
     display : inline-block;
-    padding : 10px 10px;
+    padding : 10px 8px;
+}
+@media (min-width: 854px) {
+    .btn--wishlist span {
+        padding-right : 10px;
+        padding-left : 10px;
+    }
 }
 .btn__text {
     text-align : center;
@@ -1901,6 +1907,14 @@ textarea {
 }
 .banner-horizontal {
     height : 90px;
+    padding-right : 10px;
+    padding-left : 10px;
+}
+@media (min-width: 854px) {
+    .banner-horizontal {
+        padding-right : 15px;
+        padding-left : 15px;
+    }
 }
 .banner-horizontal__wrapper {
     width : 300px;
@@ -3115,14 +3129,30 @@ textarea {
         padding-left : 35px;
     }
 }
+.page-header__logo-area {
+    padding-left : 8px;
+}
+@media (min-width: 854px) {
+    .page-header__logo-area {
+        padding-left : 15px;
+    }
+}
+.page-header__personal-area {
+    padding-right : 10px;
+}
+@media (min-width: 854px) {
+    .page-header__personal-area {
+        padding-right : 15px;
+    }
+}
 .page-header__mainpage-link {
     display : inline-block;
     margin-bottom : 15px;
 }
 .page-header__logo {
     display : block;
-    width : 156px;
-    height : 46px;
+    width : 142px;
+    height : 42px;
     margin-bottom : 11px;
 
     background : url(../img/logo-min.png) no-repeat;
@@ -4263,6 +4293,12 @@ textarea {
 }
 .webinar__socials {
     padding-top : 5px;
+    padding-right : 0;
+}
+@media (min-width: 854px) {
+    .webinar__socials {
+        padding-right : 15px;
+    }
 }
 .post__title {
     margin-bottom : 13px;
@@ -4422,6 +4458,12 @@ textarea {
 }
 .post__share {
     margin-bottom : 16px;
+    padding-left : 0;
+}
+@media (min-width: 854px) {
+    .post__share {
+        padding-left : 15px;
+    }
 }
 .post__wishlist {
     margin-bottom : 17px;
