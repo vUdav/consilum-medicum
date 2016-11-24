@@ -330,7 +330,7 @@ td, th {
     padding : 0;
 }
 /**
- * Owl Carousel v2.1.4
+ * Owl Carousel v2.2.0
  * Copyright 2013-2016 David Deutsch
  * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
  */
@@ -412,7 +412,7 @@ td, th {
     opacity : 0;
 }
 .owl-carousel.owl-refresh .owl-item {
-    display : none;
+    visibility : hidden;
 }
 .owl-carousel.owl-drag .owl-item {
     -webkit-user-select : none;
@@ -2438,9 +2438,8 @@ textarea {
 @media (min-width: 854px) {
     .news-main__row {
         display : -webkit-box;
-        display : -webkit-flex;
         display : -ms-flexbox;
-        display :         flex;
+        display : flex;
     }
 }
 .news-main__company {
@@ -2825,11 +2824,9 @@ textarea {
 }
 .pagination__list {
     display : -webkit-box;
-    display : -webkit-flex;
     display : -ms-flexbox;
-    display :         flex;
-    -webkit-justify-content : space-between;
-            justify-content : space-between;
+    display : flex;
+    justify-content : space-between;
     margin : 0;
     padding : 0;
 
@@ -3040,17 +3037,15 @@ textarea {
 }
 .sidebar__archive-number-list {
     display : -webkit-box;
-    display : -webkit-flex;
     display : -ms-flexbox;
-    display :         flex;
-    -webkit-flex-wrap : wrap;
-            flex-wrap : wrap;
+    display : flex;
+        flex-wrap : wrap;
     margin : 0;
     padding : 0;
 
     list-style : none;
 
-        -ms-flex-wrap : wrap;
+    -ms-flex-wrap : wrap;
 }
 .sidebar__archive-number-item {
     display : inline-block;
